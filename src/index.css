@@ -1,13 +1,104 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@200;400;700&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  line-height: 1.6;
+  font-weight: 400;
+
+
+  color-scheme: light dark;
+  color: #111;
+  background-color: #f4f3f1;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+
+  --color-gray-100: #f4f3f1;
+  --color-gray-200: #dddbd8;
+  --color-gray-300: #ccc9c6;
+  --color-gray-400: #aeaba7;
+  --color-gray-500: #8a8784;
+  --color-gray-600: #656360;
+  --color-gray-700: #4b4a47;
+  --color-gray-800: #31302e;
+  --color-gray-900: #1f1d1b;
+
+  --color-primary-100: #fcf3e1;
+  --color-primary-200: #fceccd;
+  --color-primary-300: #fae1af;
+  --color-primary-400: #fbd997;
+  --color-primary-500: #ffd37c;
+  --color-primary-600: #f9c762;
+  --color-primary-700: #fbc14d;
+  --color-primary-800: #fab833;
+  --color-primary-900: #f6ad1b;
+}
+
+@media (max-width: 77.75em) {
+  :root {
+    font-size: 56.5%;
+  }
+}
+@media (max-width: 59em) {
+  :root {
+    font-size: 51%;
+  }
+}
+@media (max-width: 58em) {
+  :root {
+    font-size: 50%;
+  }
+}
+@media (max-width: 56.25em) {
+  :root {
+    font-size: 48%;
+  }
+}
+@media (max-width: 31.25em) {
+  :root {
+    font-size: 40.75%;
+  }
+}
+@media (max-width: 25em) {
+  :root {
+    font-size: 30%;
+  }
+}
+
+
+/* Utilities */
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* typography */
+.link{
+  text-decoration: none;
+  color: currentColor;
+  transition: .7s linear;
+}
+.link:hover {
+  color: var(--color-gray-700);
+}
+
+.logo {
+  font-weight: bolder;
+  font-size: 4rem;
+  text-transform: lowercase;
+  word-spacing: -0.4ch;
+  font-family: "Abel", sans-serif;
 }
