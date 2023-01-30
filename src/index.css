@@ -9,7 +9,7 @@
 :root {
   font-family: "Poppins", sans-serif;
   font-size: 62.5%;
-  line-height: 1.6;
+  line-height: 1.7;
   font-weight: 400;
 
 
@@ -76,16 +76,38 @@
   }
 }
 
-
-/* Utilities */
-.flex{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+body{
+  background: var(--color-gray-100);
 }
 
 
+/* Layout */
+/* display types | defined width sizes |  */
+.flex, .flex--center{
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+}
+
+.flex--center{
+justify-content: space-around;
+}
+
+.width--min{
+  width: fit-content;
+}
+
+section{
+  margin-top: 6rem;
+}
+
+header{
+  margin-bottom: 2rem;
+}
+
 /* typography */
+/* the heading senary would be used as a default subtitle  */
+
 .link{
   text-decoration: none;
   color: currentColor;
@@ -101,4 +123,57 @@
   text-transform: lowercase;
   word-spacing: -0.4ch;
   font-family: "Abel", sans-serif;
+}
+
+.heading--secondary,.text--center{text-align: center;}
+
+.heading--primary{
+  font-size: 10rem;
+  line-height: .8;
+  font-family: "Abel", sans-serif;
+}
+
+.heading--secondary{
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.heading--quaternary{
+  font-size: 1.6rem;
+  text-transform: lowercase;
+}
+
+/* Utilities */
+
+.button{
+  padding: 1.2rem 2rem;
+  color: inherit;
+  background: var(--color-gray-100);
+  border: 0;
+  border-radius: 5px;
+}
+
+.hero{
+  height: 80vh;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  padding: 5rem;
+  margin: 0% auto;
+}
+
+@media (min-width:64em){
+  .container{
+    width: 80%;
+    height: 100%;
+  }
+}
+
+.slick-track{
+  background: var(--color-gray-500);
+  width: 50%;
+  height: 40rem;
+  margin: 0 3rem;
 }

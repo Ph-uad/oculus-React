@@ -1,14 +1,29 @@
 .nav {
     font-size: 1.6rem;
     width: 100vw;
+    position: absolute;
+    background-color: #ffffffa8;
+    backdrop-filter: saturate(10%) blur(14px);
 }
 
-.nav .container{
+@media (min-width:64em) {
+    .nav {
+        position: sticky;
+    }
+}
+
+.nav .container {
     padding: 1.4rem 2rem;
     width: 80%;
     justify-content: space-between;
     margin: 0 auto;
 }
 
-.nav li {list-style: none; text-transform: uppercase;}
-ul{gap: 4rem;}
+.nav li {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+ul {
+    gap: 4rem;
+}

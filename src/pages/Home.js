@@ -1,22 +1,27 @@
 import React from 'react'
+import Categories from '../layout/categories/Categories';
+import Gallery from '../layout/gallery/Gallery';
+import Header from '../layout/header/Header';
 
 const Home = () => {
-  let seconds = 30;
+  // let seconds = 30;
   
-  const interavalID = setInterval(()=>{
-    seconds >= 1 ? console.log(seconds--) : endCountdown();
-  },200)
+  // const interavalID = setInterval(()=>{
+  //   seconds >= 1 ? console.log(seconds--) : endCountdown();
+  // },200)
 
-  const endCountdown = () =>{
-      clearInterval(interavalID)
-  }
+  // const endCountdown = () =>{
+  //     clearInterval(interavalID)
+  // }
 
 
 
   return (
     <>
-    {true && <p onClick={endCountdown}>Modal</p>}
-         <h1>Home</h1>
+    {false && <p>Modal</p>}
+         <Header/>
+         <Categories/>
+         <Gallery/>
     </>
  
   )
