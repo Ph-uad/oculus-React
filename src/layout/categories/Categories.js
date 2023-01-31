@@ -4,22 +4,22 @@ import { Link } from 'react-router-dom'
 
 const Categories = () => {
   return (
-    <section class="category section">
-      <div class="container">
+    <section className="category section">
+      <div className="container">
         <header>
-          <h2 class="heading--secondary">categories</h2>
+          <h2 className="heading--secondary">categories</h2>
         </header>
 
-        <div class={ `flex ${classes["flex"]}` }>
-          <Link to="/sunglasses" class={ `link ${classes["category__block"]}` }>
-            <div class="">
-              <h3 class="category__label heading--secondary">sunlasses</h3>
+        <div className={ `flex ${classes["flex"]}` }>
+          <Link to="/sunglasses" className={ `link ${classes["category__block"]}` }>
+            <div className="">
+              <h3 className="category__label heading--secondary">sunglasses</h3>
             </div>
           </Link>
 
-          <Link to="/eyeglasses" class={ `link ${classes["category__block"]}` }>
-            <div class="">
-              <h3 class="category__label heading--secondary">eyeglasses</h3>
+          <Link to="/eyeglasses" className={ `link ${classes["category__block"]}` }>
+            <div className="">
+              <h3 className="category__label heading--secondary">eyeglasses</h3>
             </div>
           </Link>
 

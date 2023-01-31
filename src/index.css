@@ -171,6 +171,25 @@ header{
   }
 }
 
+.gallery{
+  width: 100vw;
+  overflow-x: auto;
+}
+
+.slider{
+  display: flex;
+  width: 130vw;
+  justify-content: space-between;
+  height: 30rem;
+  background: red;
+}
+
+.track{
+  flex: 0 0 30%;
+  height: 100%;
+  background: var(--color-gray-500);
+}
+
 .slick-track{
   background: var(--color-gray-500);
   width: 50%;
