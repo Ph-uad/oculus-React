@@ -11,10 +11,10 @@ const Nav = () => {
 
                 <ul className="list flex">
                     <li className="list--item">
-                        <Link to="/sunglasses" className="link">sunglasses</Link>
+                        <Link to="listing/sunglasses" className="link">sunglasses</Link>
                     </li>
                     <li className="list--item">
-                        <Link to="/eyeglasses" className="link">eyeglasses</Link>
+                        <Link to="listing/eyeglasses" className="link">eyeglasses</Link>
                     </li>
                 </ul>
                 

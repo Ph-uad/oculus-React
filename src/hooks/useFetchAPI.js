@@ -7,17 +7,21 @@ const useFetchAPI = () => {
 
     useEffect(() => {
         const fetchItems = async() => {
-            const response = await fetch("https://http-fetch-6eb9b-default-rtdb.firebaseio.com/cart.json");
+            const response = await fetch("https://http-fetch-6eb9b-default-rtdb.firebaseio.com/item.json");
 
             const responseData = await response.json()
-            const data = responseData.items;
+            const data = responseData;
+            console.log(data)
 
            const fetchedData =[]
 
            for (const key in data){
              fetchedData.push({
                 id: key,
-                price: data[key].price
+                name : data[key].name,
+                type : data[key].type,
+                price: data[key].price,
+                description : data[key].description,  
              })
            }
            setItems(fetchedData)
