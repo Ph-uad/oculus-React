@@ -1,4 +1,5 @@
 import React from 'react'
+import useFetchAPI from '../hooks/useFetchAPI';
 import Categories from '../layout/categories/Categories';
 import Gallery from '../layout/gallery/Gallery';
 import Header from '../layout/header/Header';
@@ -14,7 +15,8 @@ const Home = () => {
   //     clearInterval(interavalID)
   // }
 
-
+  const data = useFetchAPI();
+  console.log(data)
 
   return (
     <>
