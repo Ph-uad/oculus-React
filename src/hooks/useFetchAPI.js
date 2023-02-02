@@ -11,7 +11,6 @@ const useFetchAPI = () => {
 
             const responseData = await response.json()
             const data = responseData;
-            console.log(data)
 
            const fetchedData =[]
 
