@@ -7,31 +7,28 @@ const Eyeglasses = () => {
 
     const glassesList = filterEyeGlasses.map(item => {
         return (
-            <li className="container" key={ item.id }>
-                <div className="preview flex">
+            <li className="list card" key={ item.id }>
+                <figure className="figure list__figure">
+                    <img src={ item.image ? item.image : Image } alt="glasses" className="img" />
+                </figure>
 
-                    <figure className="picture preview__figure">
-                        <img src={item.image ? item.image : Image  } alt="glasses" className="img" />
-                    </figure>
-
-                    <div className="flex container">
-                        <div className="">
-                            <h2 className="heading--tertiary">{ item.name }</h2>
-                            <h4 className="heading--quaternary">{ item.type }</h4>
-
-                            <p className="paragraph">{ item.description }</p>
-                        </div>
-
-                    </div>
+                <div className="">
+                    <h2 className="heading--tertiary">{ item.name }</h2>
+                    <h4 className="heading--quaternary">{ item.type }</h4>
+                    <p className="paragraph">{ item.description }</p>
                 </div>
             </li>
         )
     });
 
     return (
-        <ul>
-            { glassesList }
-        </ul>
+        <section className="section">
+            <div className="container">
+                <ul className='grid'>
+                    { glassesList }
+                </ul>
+            </div>
+        </section>
 
     )
 }
