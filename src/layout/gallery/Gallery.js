@@ -52,13 +52,6 @@ const Gallery = () => {
                             className="img" />
                     </picture>
                 </SwiperSlide>
-                <SwiperSlide className={ classes["swiper-slide"] }>
-                    <picture className="picture">
-                        <img src="https://images.unsplash.com/photo-1617373310678-e6f25a2d452a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80"
-                            alt=""
-                            className="img" />
-                    </picture>
-                </SwiperSlide>
             </Swiper>
         </section>
 
