@@ -80,7 +80,6 @@ body{
   background: #fff;
 }
 
-
 /* Layout */
 /* display types | defined width sizes |  */
 .flex, .flex--center{
@@ -109,6 +108,7 @@ header{
   color: currentColor;
   transition: .7s linear;
 }
+
 .link:hover {
   color: var(--color-gray-700);
 }
@@ -134,9 +134,19 @@ header{
   text-transform: uppercase;
 }
 
+.heading--tertiary,.heading--senary{
+  text-transform: capitalize;
+}
+
 .heading--quaternary{
   font-size: 1.6rem;
   text-transform: lowercase;
+  align-self: flex-start;
+}
+
+.heading--senary{
+  font-weight: lighter;
+  font-size: 1.2rem;
 }
 
 /* Utilities */
@@ -211,6 +221,11 @@ section{
 
 .card{
   width: 100%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  cursor: pointer;
+  background: #acaeb32f;
+  padding: 20% 10%;
 }
 
 .figure{
@@ -223,4 +238,9 @@ section{
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+#root{
+  min-height: 95vh;
+  position: relative;
 }
