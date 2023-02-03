@@ -6,13 +6,17 @@ import Image4 from '../../Assets/image/image4.png'
 
 const Listing = (props) => {
 
-    const { type } = props;
+    const { type, onclick } = props;
+
+    const passUpProp = (item) =>{
+        onclick(item)
+    }
 
     const images = type === 'sunglasses' ?  [Image1, Image2, Image3] : [Image4];
     const filteredList = useFetchAPI().filter(x => x.type === type);
     const glassesList = filteredList.map(item => {
         return (
-            <div className="list card" key={ item.id }>
+            <div className="list card" key={ item.id } onClick={()=>passUpProp(item)}>
                 <figure className="figure list__figure">
                     <img src={ item.image ? item.image : images[Math.floor(Math.random() * images.length)] } alt="glasses" className="img" />
                 </figure>
@@ -27,7 +31,6 @@ const Listing = (props) => {
             </div>
         )
     });
-
 
     return (
         <section className="section">

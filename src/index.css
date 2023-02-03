@@ -84,12 +84,13 @@ body{
 /* display types | defined width sizes |  */
 .flex, .flex--center{
   display: flex;
-  place-items: center;
+  align-items: stretch;
   justify-content: space-between;
 }
 
 .flex--center{
-justify-content: space-around;
+  place-items: center;
+ justify-content: space-around;
 }
 
 .width--min{
@@ -98,6 +99,19 @@ justify-content: space-around;
 
 header{
   margin-bottom: 2rem;
+}
+
+.grid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center center;
+}
+
+@media (min-width:64em){
+  .grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* typography */
@@ -147,6 +161,10 @@ header{
 .heading--senary{
   font-weight: lighter;
   font-size: 1.2rem;
+}
+
+.paragraph{
+  font-size: 1.5rem;
 }
 
 /* Utilities */
@@ -212,20 +230,12 @@ section{
   margin-top: 6rem;
 }
 
-.grid{
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  place-items: center;
-}
-
 .card{
-  width: 100%;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   cursor: pointer;
   background: #acaeb32f;
-  padding: 20% 10%;
+  padding: 5rem 3rem;
 }
 
 .figure{
@@ -243,4 +253,13 @@ section{
 #root{
   min-height: 95vh;
   position: relative;
+}
+
+.button{
+  all: unset;
+  padding: .8rem 3rem;
+  font-size: 1.5rem;
+  background: var(--color-gray-700);
+    color: var(--color-primary-100);
+    margin-top: .5rem;
 }

@@ -1,0 +1,16 @@
+.preview{
+    height: 30vh;
+    /* overflow: hidden; */
+}
+
+.figure{
+    flex: 0 0 40%;
+}
+
+.details{
+    flex: 0 1 45%;
+}
+
+.text-left{
+    text-align: left;
+}

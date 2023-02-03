@@ -14,6 +14,7 @@
 .nav .container {
     padding: 1.4rem 2rem;
     width: 80%;
+    place-items: center;
     justify-content: space-between;
     margin: 0 auto;
 }
