@@ -1,0 +1,17 @@
+input {
+    width: 100%;
+    margin: 2rem auto;
+    background: #fff;
+    width: 80%;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    border: none;
+    text-overflow: ellipsis;
+    transition: .4s ease-in-out;
+    outline: 0;
+  }
+  
+  .search__input {
+    width: 20rem;
+    outline: none;
+  }

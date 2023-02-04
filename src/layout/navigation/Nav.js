@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './nav.module.css'
 import { Link } from 'react-router-dom'
+import SVG from '../../components/UI/Svg/Svg'
 
 const Nav = () => {
     return (
@@ -17,7 +18,7 @@ const Nav = () => {
                         <Link to="listing/eyeglasses" className="link">eyeglasses</Link>
                     </li>
                 </ul>
-                
+                    <SVG Id="#icon-shopping_bag" />
             </div>
 
 
