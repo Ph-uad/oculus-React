@@ -1,4 +1,4 @@
-import useFetchAPI from "../../hooks/useFetchAPI";
+import useFetchAPI from "../../components/hooks/useFetchAPI";
 import Image1 from '../../Assets/image/image1.png'
 import Image2 from '../../Assets/image/image2.png'
 import Image3 from '../../Assets/image/image3.png'

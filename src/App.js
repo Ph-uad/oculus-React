@@ -6,16 +6,20 @@ import Root from "./root/Root";
 
 function App() {
   const router = createBrowserRouter([
-    {path: '/', element: <Root/>,children :[
-      {path : '/', element:<Home/>},
-      {path: '/listing', children : [
-        {path: '/listing/eyeglasses', element: <Eyeglasses/>},
-        {path: '/listing/sunglasses', element: <Sunglasses/>}
-      ]}
-    ] }
+    {
+      path: '/', element: <Root />, children: [
+        { path: '', element: <Home /> },
+        {
+          path: 'listing', children: [
+            { path: 'listing/eyeglasses', element: <Eyeglasses /> },
+            { path: 'listing/sunglasses', element: <Sunglasses /> }
+          ]
+        }
+      ]
+    }
   ])
 
-  return (<RouterProvider router={router} />);
+  return (<RouterProvider router={ router } />);
 }
 
 export default App;
