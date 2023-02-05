@@ -11,7 +11,7 @@ const Preview = (props) => {
                 <div className={`details ${classes.details}`}>
                     <h1 className={`heading--secondary ${classes["text-left"]}`}>{item.name}</h1>
                     <p className="paragraph">{item.description}</p>
-                    <button className='button'>$Price</button>
+                    <button className='button'>${item.price}</button>
                 </div>
                 <figure className={`figure ${classes.figure}`}>
                     <img src={Image1} alt="" className="img" />
