@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./pages/ErrorPage";
-import Eyeglasses from "./pages/Eyeglasses";
+import Eyeglasses, {loader as eyeglassesLoader} from "./pages/Eyeglasses";
 import Home from "./pages/HomePage";
 import Sunglasses from "./pages/Sunglasses";
 import Root from "./root/Root";
@@ -12,8 +12,8 @@ function App() {
         { index: true, element: <Home /> },
         {
           path: 'listing', children: [
-            { path: 'eyeglasses', element: <Eyeglasses /> },
-            { path: 'sunglasses', element: <Sunglasses /> }
+            { path: 'eyeglasses', element: <Eyeglasses />, loader :()=>eyeglassesLoader('eyeglasses')},
+            { path: 'sunglasses', element: <Sunglasses />, loader :()=>eyeglassesLoader('sunglasses') }
           ]
         }
       ]

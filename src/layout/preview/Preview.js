@@ -6,8 +6,8 @@ const Preview = (props) => {
     const {item} = props;
 
   return (
-    <section className={`preview ${classes.preview}`}>
-        <div className="card container flex">
+    <div className={`preview ${classes.preview}`}>
+        <div className={`card container flex ${classes.flex}`}>
                 <div className={`details ${classes.details}`}>
                     <h1 className={`heading--secondary ${classes["text-left"]}`}>{item.name}</h1>
                     <p className="paragraph">{item.description}</p>
@@ -17,7 +17,7 @@ const Preview = (props) => {
                     <img src={Image1} alt="" className="img" />
                 </figure>
         </div>
-    </section>
+    </div>
   )
 }
 

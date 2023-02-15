@@ -1,16 +1,23 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useRouteError } from 'react-router-dom'
 import Nav from '../layout/navigation/Nav'
 
-const ErrorPage = ({ title = "something went wrong", message = "Please Use the navigation to get back to safety" }) => {
+const ErrorPage = () => {
+    let title = "Error Encountered";
+    let message = "The request could not be performed due to issues";
+
+    const error = useRouteError();
+    message = error.status === 200 ? error.data.message : message;
+
     return (
         <>
             <Nav />
             <section className="section">
                 <div aria-label='container' className='text--center'>
                     <h2 className="heading--secondary">{ title }</h2>
-                    <p className="paragraph">{ message }</p>
-                    <Link to='' className='paragraph'> Go to HomePage </Link>
+                    <h4 className="heading--quaternary">{ message }</h4>
+                    <p className='paragraph'>Please use the navigation to <Link to='' className='paragraph'> get back </Link> to safety</p>
+
                 </div>
             </section>
         </>
