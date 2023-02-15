@@ -12,10 +12,10 @@ const Nav = () => {
 
                 <ul className="list flex">
                     <li className="list--item">
-                        <Link to='listing/sunglasses' relative='path' className='link'>sunglasses</Link>
+                        <Link to='listing/sunglasses' relative='route' className='link'>sunglasses</Link>
                     </li>
                     <li className="list--item">
-                        <Link to='listing/eyeglasses' relative='path' className='link'>eyeglasses</Link>
+                        <Link to='listing/eyeglasses' relative='route' className='link'>eyeglasses</Link>
                     </li>
                 </ul>
                     <SVG Id='#icon-shopping_bag' />

@@ -1,11 +1,12 @@
 import React from 'react'
+import classes from './footer.module.css'
 
 const Footer = () => {
     return (
         <footer className="footer section">
             <div className="container">
-                <div className="flex">
-                    <div className="footer--details">
+                <div className={`${classes.flex} flex`}>
+                    <div className={classes.detail}>
                         <h4 className="heading--quaternary">oculus</h4>
                         <p className="paragraph">
                             Oculus is conceptual project based on learning design ,development

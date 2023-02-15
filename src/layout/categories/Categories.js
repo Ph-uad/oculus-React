@@ -11,13 +11,13 @@ const Categories = () => {
         </header>
 
         <div className={ `flex ${classes["flex"]}` }>
-          <Link to="/listing/sunglassess" className={ `link ${classes["category__block"]}` }>
+          <Link to="listing/sunglasses" className={ `link ${classes["category__block"]}` }>
             <div className="">
               <h3 className="category__label heading--secondary">sunglasses</h3>
             </div>
           </Link>
 
-          <Link to="/listing/eyeglasses" className={ `link ${classes["category__block"]}` }>
+          <Link to="listing/eyeglasses" className={ `link ${classes["category__block"]}` }>
             <div className="">
               <h3 className="category__label heading--secondary">eyeglasses</h3>
             </div>

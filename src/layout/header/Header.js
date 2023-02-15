@@ -8,14 +8,13 @@ const Header = () => {
                 <div className="width--min text--center">
                     <h1 className="heading--primary">Oculus</h1>
                     <h4 className="heading--quaternary">
-                        Transform your look, filter the shade with style.
+                        Friends wear the same shade
                     </h4>
                     <Link className="link" to=''>
                         <button className="button button--cta ">
-                        See Listing
+                           New Arrivals
                         </button>
- 
-                        </Link>
+                    </Link>
                 </div>
             </div>
         </header>
