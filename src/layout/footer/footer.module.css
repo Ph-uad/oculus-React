@@ -1,0 +1,8 @@
+.flex{
+    align-items: stretch;
+}
+
+.detail{
+    flex: 0 1 50%;
+}
+

@@ -84,7 +84,7 @@ body{
 /* display types | defined width sizes |  */
 .flex, .flex--center{
   display: flex;
-  align-items: stretch;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -108,7 +108,7 @@ header{
   place-items: center center;
 }
 
-@media (min-width:64em){
+@media (min-width:50em){
   .grid{
     grid-template-columns: repeat(4, 1fr);
   }
@@ -154,7 +154,7 @@ header{
 
 .heading--quaternary{
   font-size: 1.6rem;
-  text-transform: lowercase;
+  text-transform: capitalize;
   align-self: flex-start;
 }
 
@@ -178,7 +178,7 @@ header{
 }
 
 .hero{
-  height: 80vh;
+  height: max(60rem, 70vh);
 }
 
 .container{
@@ -248,6 +248,7 @@ section{
   height: 100%;
   width: 100%;
   object-fit: cover;
+  filter: grayscale(0%);
 }
 
 #root{
@@ -259,7 +260,9 @@ section{
   all: unset;
   padding: .8rem 3rem;
   font-size: 1.5rem;
-  background: var(--color-gray-700);
-    color: var(--color-primary-100);
+  text-transform: capitalize;
+  font-weight: bold;
+  background: var(--color-gray-100);
+    color: var(--color-gray-900);
     margin-top: .5rem;
 }
