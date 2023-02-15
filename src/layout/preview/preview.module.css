@@ -1,16 +1,17 @@
-.preview{
-    height: 30vh;
+.preview {
+    height: 40vh;
+    position: sticky;
+    top: 8rem;
+    background: #ffffff;
+    z-index: 10;
+    padding: 2rem;
     /* overflow: hidden; */
 }
 
-.figure{
-    flex: 0 0 40%;
-}
+@media (max-width:39em) {.flex {flex-direction: column;}}
 
-.details{
-    flex: 0 1 45%;
-}
+.figure { flex: 0 1 40%; }
 
-.text-left{
-    text-align: left;
-}
+.details { flex: 0 1 45%;}
+
+.text-left { text-align: left; }
