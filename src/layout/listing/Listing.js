@@ -1,4 +1,3 @@
-
 import Image1 from '../../Assets/image/image1.png'
 import Image2 from '../../Assets/image/image2.png'
 import Image3 from '../../Assets/image/image3.png'
@@ -10,6 +9,7 @@ const Listing = ({onclick, items, type }) => {
     const passUpProp = (item) => {
         onclick(item)
     }
+    
 
     const images = items[0].type === 'sunglasses' ? [Image1, Image2, Image3] : [Image4];
 
