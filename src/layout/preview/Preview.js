@@ -1,5 +1,5 @@
 import classes from './preview.module.css';
-import Image1 from '../../Assets/image/image1.png'
+// import Image1 from '../../Assets/image/image1.png'
 
 const Preview = (props) => {
 
@@ -14,7 +14,7 @@ const Preview = (props) => {
                     <button className='button'>${item.price}</button>
                 </div>
                 <figure className={`figure ${classes.figure}`}>
-                    <img src={Image1} alt="" className="img" />
+                    <img src={item.img} alt="" className="img" />
                 </figure>
         </div>
     </div>
