@@ -1,0 +1,11 @@
+
+.notification{
+    align-self:baseline;
+    background: red;
+    border-radius: 100px;
+    aspect-ratio: 1;
+    height: 7px;
+}
+.checked{
+    background-color: green;
+}

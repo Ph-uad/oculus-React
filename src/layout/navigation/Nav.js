@@ -1,12 +1,12 @@
 import React from 'react'
 import classes from './nav.module.css'
 import { Link } from 'react-router-dom'
-import SVG from '../UI/Svg/Svg'
+import Bag from './bag/Bag'
 
 const Nav = () => {
     return (
         <nav className={ ` ${classes.nav} ` }>
-            <div className={`${classes.container}  flex`}>
+            <div className={ `${classes.container}  flex` }>
 
                 <Link to="/" className='link logo' aria-describedby='Site Logo'>oculus</Link>
 
@@ -18,7 +18,7 @@ const Nav = () => {
                         <Link to='listing/eyeglasses' relative='route' className='link'>eyeglasses</Link>
                     </li>
                 </ul>
-                    <SVG Id='#icon-shopping_bag' />
+                <Bag>6</Bag>
             </div>
         </nav>
     )
