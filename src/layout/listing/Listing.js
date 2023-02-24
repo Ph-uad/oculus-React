@@ -23,20 +23,19 @@ const Listing = ({onclick, items, type }) => {
     const glassesList = items.map(item => {
         return (
             // <div className="list card" key={ item.id } onClick={ () => passUpProp(item) }>
-            <div className="list card" key={ item.id }>
+            <li className="list card" key={ item.id } onClick={() =>addToBagHandler(item)}>
                 <figure className="figure list__figure">
                     <img src={ item.image ? item.image : images[Math.floor(Math.random() * images.length)] } alt="glasses" className="img" />
                 </figure>
 
-                <div className="flex">
+                <div className="flex pad--min">
                     <div className="">
                         <h2 className="heading--tertiary">{ item.name }</h2>
                         <h6 className="heading--senary">{ item.type }</h6>
                     </div>
                         <h4 className="heading--quaternary">$450</h4>
                 </div>
-                <button className="button button--action" onClick={() =>addToBagHandler(item)}>Add</button>
-            </div>
+            </li>
         )
     });
 

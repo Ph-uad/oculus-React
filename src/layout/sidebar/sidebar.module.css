@@ -1,0 +1,41 @@
+.modal{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    right: 0;
+    z-index: 10000000;
+    transition:  1s linear;
+    
+}
+
+.sidebar{
+    height: 100vh;
+    width: 70rem;
+    background: var(--color-gray-100);
+    font-size: 1.6rem;
+    position: absolute;
+    right: 0;
+    padding: 4rem 5rem;
+    overflow: auto;
+}
+
+.cart--list{
+    padding:4rem 2rem;
+    height:90%;
+    overflow: auto;
+}
+
+.hide{
+    right: -100%;
+}
+
+.list{
+    border-bottom: 1px solid #333 ;
+    margin-bottom: 2rem;
+}
+
+.figure{
+    width: 20rem; 
+    aspect-ratio: 1;
+    overflow: hidden;
+}
