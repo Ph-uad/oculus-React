@@ -1,16 +1,20 @@
 import React from 'react'
-import {Outlet} from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import Footer from '../layout/footer/Footer'
-import Sidebar from  '../layout/sidebar/Sidebar'
 import Nav from '../layout/navigation/Nav'
+import Notification from '../layout/notification/Notification'
 
 const Root = () => {
   return (
     <div>
-        <Sidebar/>
-        <Nav/>
-        <Outlet/>
-        <Footer/>
+      <header>
+        <Notification/>
+        <Nav />
+      </header>
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
     </div>
   )
 }

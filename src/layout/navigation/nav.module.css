@@ -16,10 +16,13 @@
 
 .nav .container {
     padding: 1.4rem 2rem;
-    width: 80%;
-    place-items: center;
-    justify-content: space-between;
     margin: 0 auto;
+}
+
+@media (min-width :64em) {
+    .nav .container{
+        width: 80%;
+    }
 }
 
 .nav li {
@@ -29,6 +32,13 @@
 
 ul {
     gap: 4rem;
+}
+.logo {
+    font-weight: bolder;
+    font-size: clamp(2rem, 3rem, 4rem);
+    text-transform: lowercase;
+    word-spacing: -0.4ch;
+    font-family: "Abel", sans-serif;
 }
 
 .notification {
@@ -47,10 +57,3 @@ ul {
     background-color: green;
 }
 
-.logo {
-    font-weight: bolder;
-    font-size: 4rem;
-    text-transform: lowercase;
-    word-spacing: -0.4ch;
-    font-family: "Abel", sans-serif;
-}
