@@ -1,0 +1,66 @@
+.modal {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    overflow: hidden;
+    right: 0;
+    z-index: 10000000;
+    transition: 1s linear;
+
+}
+
+.sidebar {
+    height: 100vh;
+    width: 50rem;
+    max-width: 90vw;
+    background: var(--color-gray-100);
+    font-size: 1.6rem;
+    position: absolute;
+    right: 0;
+    padding: 4rem;
+
+    transition: .4s ease-in-out;
+}
+
+.cart--list {
+    padding: 4rem 0;
+    height: 90%;
+    overflow: auto;
+}
+
+.list--detail{
+    padding: 0 2rem;
+    text-align: right;
+}
+
+.hide {
+    right: -200%;
+}
+
+.list {
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    border: 1px solid var(--color-gray-300);
+}
+
+.figure {
+    flex: 0 30%;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.hamburger > h2{
+    cursor: pointer;
+    transform: rotate(0);
+}
+
+.hamburger{
+    transform: rotate(0deg);
+    transition: transform .2s linear;
+}
+
+.hamburger:hover{
+    transform: rotate(30deg);
+}
+
+

@@ -11,15 +11,22 @@ const bagSlice = createSlice({
     initialState,
     reducers  : {
         addToBag: (state, action)=>{
-          console.log(action.payload)
-          const newItem = action.payload
-          state.bagItems.push(
-            {
-              id: newItem.id,
-              image: newItem.image,
-              name: newItem.name,
-              price: newItem.price
-            })
+          const newItem = action.payload;
+          const findIndex = state.bagItems.findIndex(x => x.id === newItem.id);
+          if(findIndex < 0){
+            state.bagItems.push(
+              {
+                id: newItem.id,
+                image: newItem.image,
+                name: newItem.name,
+                price: newItem.price,
+                amount: 1
+              })
+            }else{
+              state.bagItems[findIndex].price += action.payload.price
+              state.bagItems[findIndex].amount +=1; 
+            }
+
            state.totalAmount += newItem.price 
         },
         removeFromBag : (state,action)=>{
