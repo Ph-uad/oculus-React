@@ -4,9 +4,10 @@
 
 .flex{
     align-items: stretch;
+    flex-wrap: wrap;
 }
 
 .detail{
-    flex: 0 1 50%;
+    flex: 1 50%;
 }
 
