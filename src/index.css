@@ -43,7 +43,6 @@
   --color-primary-900: #f6ad1b; */
 }
 
-
 body{
   min-height: 100vh;
   position: relative;
@@ -73,7 +72,7 @@ body{
   width: 100%;
   display: grid;
   gap: 3rem;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
   /* grid-auto-rows: 30vh; */
   place-items: center center;
 }
@@ -95,18 +94,20 @@ body{
 .heading--secondary,.text--center{text-align: center;}
 
 .heading--primary{
-  font-size: 10rem;
+  font-size: clamp(7rem , 15vw, 10rem);
   line-height: .8;
   font-family: "Abel", sans-serif;
 }
 
 .heading--secondary{
-  font-size: 4rem;
+  font-size:clamp(3rem, 3vw ,4rem);
   text-transform: uppercase;
 }
 
-.heading--tertiary,.heading--senary{
-  text-transform: capitalize;
+.heading--tertiary{
+  font-size:clamp(1.2rem, 1.4rem ,1.6rem);
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .heading--quaternary{
@@ -117,7 +118,8 @@ body{
 
 .heading--senary{
   font-weight: lighter;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
 }
 
 .paragraph{
@@ -127,13 +129,6 @@ body{
 /* Utilities */
 .pad--min{
   padding: 2rem 1rem;
-}
-.button{
-  padding: 1.2rem 2rem;
-  color: inherit;
-  background: var(--color-gray-100);
-  border: 0;
-  border-radius: 5px;
 }
 
 .hero{
@@ -184,7 +179,7 @@ li{
   list-style-type: none;
 }
 
-section{
+.section{
   width: 100vw;
   margin-top: 2rem;
 }
@@ -213,13 +208,47 @@ section{
   position: relative;
 }
 
-.button{
-  all: unset;
-  padding: .8rem 3rem;
+.btn {
+  padding: 2rem;
+  background: inherit;
+  width: 15rem;
+  margin-top: 1.5rem;
+  border: 1px solid var(--color-gray-800);
+  color: var(--color-gray-900);
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); */
+  overflow: hidden;
+}
+
+.btn span {
   font-size: 1.5rem;
-  text-transform: capitalize;
-  font-weight: bold;
-  background: var(--color-gray-100);
-    color: var(--color-gray-900);
-    margin-top: .5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+}
+
+.btn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn:hover .btn-text-one {
+  top: -100%;
+}
+
+.btn:hover .btn-text-two {
+  top: 50%;
 }

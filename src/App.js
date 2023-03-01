@@ -1,8 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./pages/ErrorPage";
-import Eyeglasses, {loader as eyeglassesLoader} from "./pages/Eyeglasses";
+import Eyeglasses, {loader as glassesLoader} from "./pages/Eyeglasses";
 import Home from "./pages/HomePage";
 import Sunglasses from "./pages/Sunglasses";
+import ItemDetailPage, {loader as detailLoader} from './pages/ItemDetailPage'
 import Root from "./root/Root";
 
 function App() {
@@ -12,8 +13,9 @@ function App() {
         { index: true, element: <Home /> },
         {
           path: 'listing', children: [
-            { path: 'eyeglasses', element: <Eyeglasses />, loader :()=>eyeglassesLoader('eyeglasses')},
-            { path: 'sunglasses', element: <Sunglasses />, loader :()=>eyeglassesLoader('sunglasses') }
+            { path: 'eyeglasses', element: <Eyeglasses />, loader :()=>glassesLoader('eyeglasses')},
+            { path: 'sunglasses', element: <Sunglasses />, loader :()=>glassesLoader('sunglasses') },
+            {path : ':itemID',id:'listing-detail',  element : <ItemDetailPage/>, loader: detailLoader}
           ]
         }
       ]
