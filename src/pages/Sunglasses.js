@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 import { useLoaderData } from 'react-router-dom'
-import Listing from '../layout/listing/Listing'
+import Listing from '../components/listing/Listing'
 // import Preview from '../layout/preview/Preview'
 
 const Sunglasses = () => {
