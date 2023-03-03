@@ -5,3 +5,5 @@
     cursor: default;
     user-select: none;
 }
+
+.hero{height: max(60rem, 70vh);}

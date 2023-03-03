@@ -12,12 +12,14 @@
   }
   .category__block {
     display: block;
-    flex: 0 1 35%;
+    flex: 1 35%;
     padding: 2rem;
     aspect-ratio: 1/0.85;
     color: var(--color-gray-100);
   }
 
   .flex{
+    flex-wrap: wrap;
+    gap: 2rem;
     justify-content: space-around;
   }

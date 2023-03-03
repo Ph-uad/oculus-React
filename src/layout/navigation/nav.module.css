@@ -1,27 +1,23 @@
 .nav {
-    font-size: 1.6rem;
     width: 100vw;
-    position: sticky;
+    position:sticky;
     top: 0;
     background-color: #ffffff6d;
     backdrop-filter: saturate(20%) blur(4px);
     z-index: 100;
 }
 
-@media (min-width:64em) {
-    .nav {
-        position: sticky;
-    }
-}
-
 .nav .container {
-    padding: 1.4rem 2rem;
+    padding: 1.4rem 0;
+    width: 100%;
     margin: 0 auto;
+    align-items: center;
 }
 
 @media (min-width :64em) {
     .nav .container{
         width: 80%;
+        padding: 1.4rem 2rem;
     }
 }
 
@@ -31,11 +27,12 @@
 }
 
 ul {
-    gap: 4rem;
+    gap: 2rem;
 }
+
 .logo {
     font-weight: bolder;
-    font-size: clamp(2rem, 3rem, 4rem);
+    font-size: clamp(1.8rem, 3rem, 4rem);
     text-transform: lowercase;
     word-spacing: -0.4ch;
     font-family: "Abel", sans-serif;

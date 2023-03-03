@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Categories = () => {
   return (
-    <section className="category section">
+    <section className="section">
       <div className="container">
         <header>
           <h2 className="heading--secondary">categories</h2>

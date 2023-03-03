@@ -1,7 +1,6 @@
 import classes from './gallery.module.css'
 // import Swiper core and required modules
 import { Navigation, Pagination, Autoplay } from 'swiper';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
