@@ -14,7 +14,7 @@ const Footer = () => {
                 </div>
                 <div className="contact">
                     <h4 className="heading--quaternary">Fancy Note</h4>
-                    <span className="paragraph">we know what tomorrow is <br /> cause we saw yesterday</span>
+                    <p className="paragraph">we know what tomorrow is <br /> cause we saw yesterday</p>
                 </div>
             </div>
         </footer>

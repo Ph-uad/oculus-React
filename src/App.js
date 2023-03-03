@@ -5,6 +5,7 @@ import Home from "./pages/HomePage";
 import Sunglasses from "./pages/Sunglasses";
 import ItemDetailPage, {loader as detailLoader} from './pages/ItemDetailPage'
 import Root from "./root/Root";
+import CartPage from "./pages/CartPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -17,7 +18,8 @@ function App() {
             { path: 'sunglasses', element: <Sunglasses />, loader :()=>glassesLoader('sunglasses') },
             {path : ':itemID',id:'listing-detail',  element : <ItemDetailPage/>, loader: detailLoader}
           ]
-        }
+        },
+        {path: 'cart', element: <CartPage/>}
       ]
     }
   ])
