@@ -7,12 +7,11 @@ const HomePage = () => {
 
   return (
     <>
-    {false && <p>Modal</p>}
-         <Header/>
-         <Categories/>
-         <Gallery/>
+      <Header />
+      <Categories />
+      <Gallery />
     </>
- 
+
   )
 }
 

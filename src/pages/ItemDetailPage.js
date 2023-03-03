@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { Await, defer, json, useRouteLoaderData } from "react-router-dom";
-import ItemDetail from "../layout/itemDetail/ItemDetail";
-import Listing from "../layout/listing/Listing";
+import ItemDetail from "../components/itemDetail/ItemDetail";
+import Listing from "../components/listing/Listing";
 
 const ItemDetailPage = () => {
   const { item, items } = useRouteLoaderData('listing-detail');
