@@ -1,0 +1,23 @@
+.tile {
+    /* flex: 1 40%; */
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.right {
+    margin-left: auto;
+    /* text-align: right; */
+}
+
+/* .rack{
+
+    min-width: 100vw;
+    max-height: 40vh;
+    overflow-x: scroll;
+    gap: 4rem;
+} */
+
+.mySwiper{
+   gap :2rem;
+   flex-wrap: wrap;
+}
