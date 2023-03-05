@@ -12,7 +12,6 @@ const bagSlice = createSlice({
     addToBag: (state, action) => {
       const newItem = action.payload;
       const findIndex = state.bagItems.findIndex(x => x.id === newItem.id);
-      console.log(findIndex, state.bagItems, action.payload)
       if (findIndex < 0) {
         state.bagItems.push(
           {
@@ -39,6 +38,7 @@ const bagSlice = createSlice({
       const findIndex = state.bagItems.findIndex(x => x.id === newItem.id);
       if (state.bagItems[findIndex].amount === 1) {
         delete state.bagItems[findIndex]
+        console.log(state.bagItems[findIndex], findIndex)
       } else {
         state.bagItems[findIndex].amount -= 1;
       }
