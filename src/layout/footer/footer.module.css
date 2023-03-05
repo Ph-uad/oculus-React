@@ -2,7 +2,11 @@
     background: #eee;
 }
 
+.flex{
+    flex-wrap: wrap;
+}
+
 .detail{
-    flex: 0 50%;
+    flex: 1 50%;
 }
 

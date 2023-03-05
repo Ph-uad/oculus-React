@@ -26,7 +26,7 @@ const Cart = () => {
 
     const mapBagItems = items.map(item => {
         if (!item) {
-            return <p>Nothing here</p>
+            return <p key='0ss'>Nothing here</p>
         }
         return (
             <SwiperSlide key={ item.id } className={ `${classes.tile}` }>
@@ -75,7 +75,7 @@ const Cart = () => {
                 modules={ [Pagination] }
                 className={ classes["mySwiper"] }
             >
-                { mapBagItems }
+                { mapBagItems && mapBagItems }
             </Swiper>
 
             <h3 className={`text--right heading--secondary`}>Bill : ${total}</h3>

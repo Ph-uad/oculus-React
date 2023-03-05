@@ -1,10 +1,20 @@
 .nav {
     width: 100vw;
-    position:sticky;
+    position: fixed;
     top: 0;
-    background-color: #ffffff6d;
-    backdrop-filter: saturate(20%) blur(4px);
+    /* background-color: #ffffff6d;
+    backdrop-filter: saturate(20%) blur(4px); */
     z-index: 100;
+    color: var(--color-gray-100);
+}
+
+@media (min-width:64em) {
+    .nav {
+        position: sticky;
+        background-color: #ffffff6d;
+        backdrop-filter: saturate(20%) blur(4px);
+        color: var(--color-gray-900);
+    }
 }
 
 .nav .container {
@@ -15,7 +25,7 @@
 }
 
 @media (min-width :64em) {
-    .nav .container{
+    .nav .container {
         width: 80%;
         padding: 1.4rem 2rem;
     }
@@ -46,6 +56,13 @@ ul {
     height: 7px;
 }
 
+@media (max-width:64em) {
+    .bag svg {
+        fill: aliceblue;
+    }
+}
+
+
 .bag:hover {
     cursor: pointer;
 }
@@ -53,4 +70,3 @@ ul {
 .checked {
     background-color: green;
 }
-
