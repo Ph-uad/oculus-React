@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+/* #root{
+  position: relative;
+} */
+
 :root {
   font-family: "Poppins", sans-serif;
   font-size: clamp(30%, 62.5%, 70% );
@@ -14,6 +18,7 @@
 
   color-scheme: light dark;
   color: var(--color-gray-900);
+
 
   font-synthesis:none;
   text-rendering:optimizeLegibility;
@@ -71,18 +76,18 @@ body{
 .grid{
   width: 100%;
   display: grid;
-  gap: 3rem;
-  grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+  gap: 4rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 }
 
 /* typography */
-/* the heading senary would be used as a default subtitle  */
 
 .link{
   text-decoration: none;
   color: currentColor;
   transition: .7s linear;
   font-size: inherit;
+  cursor: pointer;
 }
 
 .link:hover {
@@ -212,9 +217,12 @@ li{
 }
 
 .btn {
-  padding: 1.7rem 2rem;
+  all: unset;
+  display: block;
+  padding: 1.5rem 1.8rem;
   background: inherit;
-  min-width: 13rem;
+  width: 13rem;
+  text-align: center;
   text-transform: uppercase;
   margin-top: 1.5rem;
   border: 1px solid var(--color-gray-800);
@@ -222,7 +230,6 @@ li{
   border-radius: 5px;
   cursor: pointer;
   position: relative;
-  /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); */
   overflow: hidden;
 }
 
@@ -279,9 +286,5 @@ li{
   position: absolute;
   right: 50%;
   top: 70%;
-  z-index: 200;
-}
-
-.swiper-wrapper{
-  gap: 2rem;
+  z-index: 20;
 }
