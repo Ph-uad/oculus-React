@@ -4,23 +4,35 @@
     background-color: #ffffff6d;
     backdrop-filter: saturate(20%) blur(4px);
 }
+.preview--flex {
+    align-items: end;
+}
 
 @media (max-width:64em) {
     .preview--flex {
-       flex-direction: column;
+        flex-direction: column;
+    }
+    .preview--flex {
+        align-items: stretch;
+    }
+    .figure {
+        flex: 0 0 25%;
+        object-fit: cover;
     }
 }
 
-.preview--flex {
-    align-items: flex-end;
-}
-
 .figure {
-    flex: 0 0 25%;
-    object-fit: cover;
+width: 20rem;
 }
 
-.details,.preview--action {
+    .figure {
+        flex: 0 0 25%;
+        object-fit: cover;
+    }
+
+
+.details,
+.preview--action {
     flex: 0 30%;
     line-height: 1.8;
 }

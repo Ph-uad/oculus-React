@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import classes from './notification.module.css'
 import { Link } from 'react-router-dom';
 import { uiActions } from '../../store/ui-slice';
+import Modal from '../../layout/UI/overlayModal/Modal';
 
 
 const Notification = () => {
@@ -11,8 +12,8 @@ const Notification = () => {
 
 
   const mapBagItems = items.map(item => {
-    if(!item){
-      return(
+    if (!item) {
+      return (
         <p className='paragraph'>
           Nothing here
         </p>
@@ -33,24 +34,21 @@ const Notification = () => {
   const closeBagHandler = () => {
     dispatch(uiActions.toggleNotification())
   }
-
-  return (
-    <div className={ `${classes.modal} ${!visible ? classes.hide : null}` }>
+  
+  if (visible) return (
+    <Modal onClick={ closeBagHandler }>
       <div className={ classes.sidebar }>
         <div className="flex">
           <h3 className='heading--tertiary'>Added Items </h3>
-          <div className={ classes.hamburger } onClick={ closeBagHandler }>
-            <h2 className="heading--tertiary">&#10005;</h2>
-          </div>
+          <div className={ classes.hamburger } onClick={ closeBagHandler }><h2 className="heading--tertiary link">&#10005;</h2></div>
         </div>
 
         <dl className={ classes['cart--list'] }>
           { mapBagItems ? mapBagItems : <h2 className="heading--secondary">No Items here yet</h2> }
         </dl>
-        { <Link to="/cart" onClick={ closeBagHandler } relative='route' className='btn link text--right'> See shopping basket </Link> }
+        { <Link to="/cart" onClick={ closeBagHandler } relative='route' className={`btn link ${classes['text--right']}`}> See Bag </Link> }
       </div>
-    </div>
-
+    </Modal>
   )
 }
 export default Notification
