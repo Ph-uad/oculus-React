@@ -8,14 +8,14 @@
     color: var(--color-gray-900);
 }
 
-@media (min-width:64em) {
+/* @media (min-width:64em) {
     .nav {
         position: sticky;
         background-color: #ffffff6d;
         backdrop-filter: saturate(20%) blur(4px);
         color: var(--color-gray-900);
     }
-}
+} */
 
 .nav .container {
     padding: 1.4rem 0;
