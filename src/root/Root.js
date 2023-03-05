@@ -7,10 +7,8 @@ import Notification from '../components/notification/Notification'
 const Root = () => {
   return (
     <div>
-      <header>
         <Notification/>
         <Nav />
-      </header>
       <main>
         <Outlet />
       </main>
