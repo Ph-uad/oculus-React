@@ -1,6 +1,6 @@
 .nav {
     width: 100vw;
-    position: fixed;
+    position: sticky;
     top: 0;
     background-color: #ffffff6d;
     backdrop-filter: saturate(20%) blur(4px);
@@ -8,17 +8,8 @@
     color: var(--color-gray-900);
 }
 
-/* @media (min-width:64em) {
-    .nav {
-        position: sticky;
-        background-color: #ffffff6d;
-        backdrop-filter: saturate(20%) blur(4px);
-        color: var(--color-gray-900);
-    }
-} */
-
 .nav .container {
-    padding: 1.4rem 0;
+    padding: 1.4rem;
     width: 100%;
     margin: 0 auto;
     align-items: center;
@@ -50,18 +41,11 @@ ul {
 
 .notification {
     align-self: baseline;
-    background: red;
+    /* background: red; */
     border-radius: 100px;
     aspect-ratio: 1;
     height: 7px;
 }
-
-@media (max-width:64em) {
-    .bag svg {
-        fill: aliceblue;
-    }
-}
-
 
 .bag:hover {
     cursor: pointer;

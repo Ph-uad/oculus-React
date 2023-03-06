@@ -1,11 +1,13 @@
 import React from 'react'
 import classes from './nav.module.css'
 import { Link } from 'react-router-dom'
-import { useDispatch } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import SVG from "../UI/Svg/Svg"
 import { uiActions } from '../../store/ui-slice'
 
 const Nav = () => {
+
+    const inCart = useSelector(item => item.bag.bagItems.length)
     const dispatch = useDispatch()
 
     const showBagHandler = () => {
@@ -29,7 +31,7 @@ const Nav = () => {
 
                 <div className={ `flex ${classes.bag}` } onClick={ showBagHandler }>
                     <SVG Id='#icon-shopping_bag' />
-                    <span className={ `${classes.notification}` }></span>
+                    { inCart && <span className={ `${classes.notification}` }>{inCart}</span> }
                 </div>
 
             </div>
