@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 
 
 // import required modules
-import {Pagination } from "swiper";
+import { Pagination } from "swiper";
 
 
 
@@ -32,13 +32,13 @@ const Cart = () => {
             <SwiperSlide key={ item.id } className={ `${classes.tile}` }>
                 <figure className={ `figure ${classes.figure}` }><img src={ item.image } className="img" alt="thumbnail" /></figure>
                 <div className={ classes['list--detail'] }>
-                    <div className="flex">
-                        <div className="">
+                    <div className="">
+                        <div className="flex">
                             <h3 className={ `heading--senary` }>{ item.name }</h3>
-                            <button className="btn--utility" onClick={ () => substractItemHandler(item) }>-</button>
-                        </div>
-                        <div className="">
                             <h4 className="heading--senary">${ item.price }(x{ item.amount })</h4>
+                        </div>
+                        <div className="flex">
+                            <button className="btn--utility" onClick={ () => substractItemHandler(item) }>-</button>
                             <div className="flex text--right">
                                 <button className={ `btn--utility ${classes.right}` } onClick={ () => addItemHandler(item) } >+</button>
                             </div>
@@ -78,7 +78,7 @@ const Cart = () => {
                 { mapBagItems && mapBagItems }
             </Swiper>
 
-            <h3 className={`text--right heading--secondary`}>Bill : ${total}</h3>
+            <h3 className={ `text--right heading--secondary` }>Bill : ${ total }</h3>
         </section>
     )
 }

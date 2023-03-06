@@ -1,13 +1,13 @@
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { bagActions } from "../../store/bag-slice";
-import { uiActions } from "../../store/ui-slice";
+// import { uiActions } from "../../store/ui-slice";
 
 const Listing = ({ items }) => {
     const dispatch = useDispatch();
     const addToBagHandler = (item) => {
         dispatch(bagActions.addToBag(item))
-        dispatch(uiActions.toggleNotification())
+        // dispatch(uiActions.toggleNotification())
     }
 
     const glassesList = items.map(item => {
@@ -18,7 +18,7 @@ const Listing = ({ items }) => {
                         <img src={ item.image } alt="glasses" className="img" />
                     </figure>
                 </Link>
-                <span className="flex">
+                <span className="">
                     <h3 className="heading--tertiary">{ item.name }</h3>
                     <h6 className="heading--senary">${ item.price }</h6>
                 </span>
