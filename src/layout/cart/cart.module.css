@@ -3,6 +3,7 @@
     aspect-ratio: 1;
     object-fit: cover;
     padding: 3rem;
+    margin-bottom: 2rem;
 }
 
 .right {
@@ -11,5 +12,4 @@
 
 .mySwiper{
    gap :2rem;
-   flex-wrap: wrap;
 }
