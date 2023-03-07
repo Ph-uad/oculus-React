@@ -29,18 +29,20 @@ const Cart = () => {
             return <p key='0ss'>Nothing here</p>
         }
         return (
-            <SwiperSlide key={ item.id } className={ `${classes.tile}` }>
-                <figure className={ `figure ${classes.figure}` }><img src={ item.image } className="img" alt="thumbnail" /></figure>
-                <div className={ classes['list--detail'] }>
-                    <div className="">
-                        <div className="flex">
-                            <h3 className={ `heading--senary` }>{ item.name }</h3>
-                            <h4 className="heading--senary">${ item.price }(x{ item.amount })</h4>
-                        </div>
-                        <div className="flex">
-                            <button className="btn--utility" onClick={ () => substractItemHandler(item) }>-</button>
-                            <div className="flex text--right">
-                                <button className={ `btn--utility ${classes.right}` } onClick={ () => addItemHandler(item) } >+</button>
+            <SwiperSlide key={ item.id }>
+                <div className={ `${classes.tile}` }>
+                    <figure className={ `figure ${classes.figure}` }><img src={ item.image } className="img" alt="thumbnail" /></figure>
+                    <div className={ classes['list--detail'] }>
+                        <div className="">
+                            <div className="flex">
+                                <h3 className={ `heading--senary` }>{ item.name }</h3>
+                                <h4 className="heading--senary">${ item.price }(x{ item.amount })</h4>
+                            </div>
+                            <div className="flex">
+                                <button className="btn--utility" onClick={ () => substractItemHandler(item) }>-</button>
+                                <div className="flex text--right">
+                                    <button className={ `btn--utility ${classes.right}` } onClick={ () => addItemHandler(item) } >+</button>
+                                </div>
                             </div>
                         </div>
                     </div>

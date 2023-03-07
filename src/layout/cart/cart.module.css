@@ -2,6 +2,7 @@
     /* flex: 1 40%; */
     aspect-ratio: 1;
     object-fit: cover;
+    padding: 3rem;
 }
 
 .right {
