@@ -52,7 +52,7 @@ async function loadRandomItems() {
     )
   } else {
     const resData = await response.json();
-    const data = resData.slice(0, 4);
+    const data = resData.slice(0, 5);
     return data;
   }
 }

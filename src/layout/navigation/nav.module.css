@@ -1,4 +1,6 @@
-.nav {
+
+
+nav {
     width: 100vw;
     position: sticky;
     top: 0;
@@ -13,10 +15,15 @@
     width: 100%;
     margin: 0 auto;
     align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
+
+
 
 @media (min-width :64em) {
     .nav .container {
+        flex-wrap: nowrap;
         width: 80%;
         padding: 1.4rem 2rem;
     }
@@ -37,20 +44,23 @@ ul {
     text-transform: lowercase;
     word-spacing: -0.4ch;
     font-family: "Abel", sans-serif;
+    flex: 0 auto;
 }
 
 .notification {
     align-self: baseline;
-    /* background: red; */
-    border-radius: 100px;
-    aspect-ratio: 1;
-    height: 7px;
 }
 
 .bag:hover {
     cursor: pointer;
 }
 
-.checked {
-    background-color: green;
+@media (max-width :64em) {
+    .nav .container {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .logo{
+        flex: 1 100%;
+    }
 }
