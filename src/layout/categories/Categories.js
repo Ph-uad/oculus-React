@@ -7,7 +7,7 @@ const Categories = () => {
     <section className="section">
       <div className="container">
         <header>
-          <h2 className="heading--secondary">categories</h2>
+          <h2 className="heading--secondary text--center">categories</h2>
         </header>
 
         <div className={ `flex ${classes["flex"]}` }>

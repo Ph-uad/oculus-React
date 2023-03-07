@@ -15,7 +15,7 @@ const ItemDetailPage = () => {
       </Suspense>
       <Suspense fallback={ <p className="text--center">Loading</p> }>
         <Await resolve={ items }>
-          { (loadRandomItem) => (<><h2 className="heading--secondary">More</h2> <Listing items={ loadRandomItem } /> </>) }
+          { (loadRandomItem) => (<><h2 className="heading--secondary text--center">More</h2> <Listing items={ loadRandomItem } /> </>) }
         </Await>
       </Suspense>
     </>

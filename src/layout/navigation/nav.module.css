@@ -2,14 +2,14 @@ nav {
     width: 100vw;
     position: sticky;
     top: 0;
-    background-color: #ffffff6d;
+    background-color: var(--color-primary-transparent);
     backdrop-filter: saturate(20%) blur(4px);
     z-index: 100;
     color: var(--color-gray-900);
 }
 
 .nav .container {
-    padding:.1rem 1.4rem;
+    padding:.1rem 1rem;
     width: 100%;
     margin: 0 auto;
     align-items: center;

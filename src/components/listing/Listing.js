@@ -1,13 +1,11 @@
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { bagActions } from "../../store/bag-slice";
-// import { uiActions } from "../../store/ui-slice";
 
 const Listing = ({ items }) => {
     const dispatch = useDispatch();
     const addToBagHandler = (item) => {
         dispatch(bagActions.addToBag(item))
-        // dispatch(uiActions.toggleNotification())
     }
 
     const glassesList = items.map(item => {

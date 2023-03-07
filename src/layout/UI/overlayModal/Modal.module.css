@@ -5,13 +5,13 @@
   width: 100vw;
   height: 100vh;
   z-index: 200;
-  background-color: rgba(0, 0, 0, 0.594);
+  background-color:#b9b7bd3e;
 }
 
 .modal {
   position: fixed;
   right: 0;
-  height: 100vh;
+  height: 95vh;
   width: 90vw;
   z-index: 300;
   animation: slide-right 300ms ease-out forwards;

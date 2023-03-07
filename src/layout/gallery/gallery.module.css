@@ -1,5 +1,6 @@
 .mySwiper{
     height: 40rem;
+    object-fit: cover;
 }
 
 .swiper-slide{

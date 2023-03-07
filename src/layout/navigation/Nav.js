@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './nav.module.css'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { useDispatch, useSelector } from "react-redux"
 import SVG from "../UI/Svg/Svg"
 import { uiActions } from '../../store/ui-slice'
@@ -22,10 +22,10 @@ const Nav = () => {
 
                 <ul className="list flex">
                     <li className="list--item">
-                        <Link to='listing/sunglasses' relative='route' className='link'>sunglasses</Link>
+                        <NavLink to='listing/sunglasses' relative='route' className={({ isActive }) => (isActive ? 'active' : '') + ' link'}>sunglasses</NavLink>
                     </li>
                     <li className="list--item">
-                        <Link to='listing/eyeglasses' relative='route' className='link'>eyeglasses</Link>
+                        <NavLink to='listing/eyeglasses' relative='route' className={({isActive}) =>  (isActive ? 'active' : '') +' link'}>eyeglasses</NavLink>
                     </li>
                 </ul>
 

@@ -17,9 +17,9 @@ const ItemDetail = ({ item }) => {
       <div className={ `container flex ${classes['preview--flex']}` }>
         <figure className={ `${classes.figure}` }>
           <img src={ item.image } alt="" className="img" />
+          <figcaption className={ `heading--secondary ${classes["text-left"]}` }>/ { item.name } /</figcaption>
         </figure>
         <div className={ `details ${classes.details}` }>
-          <h2 className={ `heading--secondary ${classes["text-left"]}` }>/ { item.name } /</h2>
           <p className="paragraph">lorem lorem lorem lorem lorem lorem lorem ,orem lorem lorem lorem lorem llorem lorem ,orem lorem lorem lorem lorem lorem </p>
           <ol>
             <h3 className="heading--tertiary">Composition</h3>
