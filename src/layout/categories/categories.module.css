@@ -1,20 +1,21 @@
-.category__block:first-child {
+.category_block:first-child {
     background: linear-gradient(#000000a6, #00000042),
     url("https://images.unsplash.com/photo-1632421399270-0f6636d08446?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80");
     background-size: cover;
     background-position: center center;
   }
-  .category__block:last-child {
+  .category_block:last-child {
     background: linear-gradient(#000000a6, #00000042),
       url("https://images.unsplash.com/photo-1522938974444-f12497b69347?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2218&q=80");
     background-size: cover;
     background-position: center center;
   }
-  .category__block {
+
+  .category_block {
     display: block;
     flex: 1 35%;
-    padding: 2rem;
-    aspect-ratio: 1/0.85;
+    padding: 4rem;
+    aspect-ratio: 1.176;
     color: var(--color-gray-100);
   }
 

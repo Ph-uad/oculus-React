@@ -21,10 +21,10 @@ const Nav = () => {
                 <Link to="/" className={ `link ${classes.logo}` } aria-describedby='Site Logo'>oculus</Link>
 
                 <ul className="list flex">
-                    <li className="list--item">
+                    <li className="list-item">
                         <NavLink to='listing/sunglasses' relative='route' className={({ isActive }) => (isActive ? 'active' : '') + ' link'}>sunglasses</NavLink>
                     </li>
-                    <li className="list--item">
+                    <li className="list-item">
                         <NavLink to='listing/eyeglasses' relative='route' className={({isActive}) =>  (isActive ? 'active' : '') +' link'}>eyeglasses</NavLink>
                     </li>
                 </ul>

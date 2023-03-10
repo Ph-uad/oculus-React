@@ -17,8 +17,8 @@ const Listing = ({ items }) => {
                     </figure>
                 </Link>
                 <span className="">
-                    <h3 className="heading--tertiary">{ item.name }</h3>
-                    <h6 className="heading--senary">${ item.price }</h6>
+                    <h3 className="heading-tertiary">{ item.name }</h3>
+                    <h6 className="heading-senary">${ item.price }</h6>
                 </span>
                 <button onClick={ () => addToBagHandler(item) } className='btn--utility btn--utility__center'>+</button>
             </div>
@@ -27,7 +27,7 @@ const Listing = ({ items }) => {
 
     return (
         <section className="section">
-            <div className="container item--container">
+            <div className="container item-container">
                 <div className='grid'>
                     { glassesList }
                 </div>

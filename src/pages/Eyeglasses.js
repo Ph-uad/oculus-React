@@ -1,23 +1,16 @@
-// import { useState } from "react"
 import { json, useLoaderData } from "react-router-dom";
 import Listing from "../components/listing/Listing"
-// import Preview from "../layout/preview/Preview"
 
 const Eyeglasses = () => {
 
     const data = useLoaderData();
-    // const [previewItem, setPreviewItem] = useState();
-    // const clickHandler = (data) => { setPreviewItem(data); }
-
     return (
-        <>
-            {/* { previewItem && <Preview item={ previewItem } /> } */}
-            {/* <Listing items={data} onclick={ clickHandler } type="eyeglasses" /> */}
-            <Listing items={data} type="eyeglasses" />
-        </>
-    )
+        <Listing items={ data } type="eyeglasses" />
+        )
 }
+
 export default Eyeglasses
+
 
 export async function loader(data) {
 
@@ -25,8 +18,9 @@ export async function loader(data) {
 
     if (!response.ok) {
         throw json(
-            { message: 'Can not connect to the server at the moment' ,
-             status: 422 
+            {
+                message: 'Can not connect to the server at the moment',
+                status: '422'
             }
         )
     } else {

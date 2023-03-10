@@ -14,7 +14,7 @@ const Gallery = () => {
     return (
         <section>
             <header>
-                <h2 className="heading--secondary text--center">Gallery</h2>
+                <h2 className="heading-secondary">Gallery</h2>
             </header>
             <Swiper
                 spaceBetween={ 30 }

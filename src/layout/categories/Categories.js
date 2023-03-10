@@ -7,19 +7,19 @@ const Categories = () => {
     <section className="section">
       <div className="container">
         <header>
-          <h2 className="heading--secondary text--center">categories</h2>
+          <h2 className="heading-secondary">categories</h2>
         </header>
 
         <div className={ `flex ${classes["flex"]}` }>
-          <Link to="listing/sunglasses" className={ `link ${classes["category__block"]}` }>
+          <Link to="listing/sunglasses" className={ `link ${classes["category_block"]}` }>
             <div className="">
-              <h3 className="category__label heading--secondary">sunglasses</h3>
+              <h3 className="text-center  heading-secondary">sunglasses</h3>
             </div>
           </Link>
 
-          <Link to="listing/eyeglasses" className={ `link ${classes["category__block"]}` }>
+          <Link to="listing/eyeglasses" className={ `link ${classes["category_block"]}` }>
             <div className="">
-              <h3 className="category__label heading--secondary">eyeglasses</h3>
+              <h3 className="text-center heading-secondary">eyeglasses</h3>
             </div>
           </Link>
 
