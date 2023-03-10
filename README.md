@@ -1,6 +1,6 @@
-#E-commerce Web App build by React
+### E-commerce Web App build by React
 
-#Concept used 
+### Concept used 
 1. React Router 
 2. Redux
 
