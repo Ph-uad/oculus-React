@@ -123,6 +123,7 @@ body {
   font-size: 1.5rem;
   line-height: 1.6;
   word-spacing: 0.12rem;
+  margin: 1rem 0;
 }
 
 .paragraph::first-letter {

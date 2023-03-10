@@ -4,17 +4,17 @@
     overflow: hidden;
 }
 
-.preview--flex {
+.preview-flex {
     align-items: end;
 }
+
 @media (max-width:64em) {
-    .preview--flex {
+    .preview-flex {
         flex-direction: column;
         gap: 2rem;
-    }
-    .preview--flex {
         align-items: stretch;
     }
+
     .figure {
         flex: 0 0 25%;
         object-fit: cover;
@@ -22,13 +22,13 @@
 }
 
 .figure {
-width: 20rem;
+    width: 20rem;
 }
 
-    .figure {
-        flex: 0 0 25%;
-        object-fit: cover;
-    }
+.figure {
+    flex: 0 0 25%;
+    object-fit: cover;
+}
 
 
 .details,
