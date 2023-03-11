@@ -21,7 +21,7 @@ const Listing = ({ items }) => {
                         <h3 className="heading-tertiary">{ item.name }</h3>
                         <h6 className="heading-senary">'{ item.type }'</h6>
                     </span>
-                    <button onClick={ () => addToBagHandler(item) } className='btn--utility btn--utility__center'>${item.price}</button>
+                    <button onClick={ () => addToBagHandler(item) } className='btn-utility'>${item.price}</button>
                 </div>
             </div>
         )
