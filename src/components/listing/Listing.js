@@ -11,16 +11,18 @@ const Listing = ({ items }) => {
     const glassesList = items.map(item => {
         return (
             <div className="link item" key={ item.id }>
-                <Link className="link"  to={ `/listing/${item.id}`}>
+                <Link className="link" to={ `/listing/${item.id}` }>
                     <figure className="figure list__figure">
                         <img src={ item.image } alt="glasses" className="img" />
                     </figure>
                 </Link>
-                <span className="">
-                    <h3 className="heading-tertiary">{ item.name }</h3>
-                    <h6 className="heading-senary">${ item.price }</h6>
-                </span>
-                <button onClick={ () => addToBagHandler(item) } className='btn--utility btn--utility__center'>+</button>
+                <div className="flex">
+                    <span className="">
+                        <h3 className="heading-tertiary">{ item.name }</h3>
+                        <h6 className="heading-senary">'{ item.type }'</h6>
+                    </span>
+                    <button onClick={ () => addToBagHandler(item) } className='btn--utility btn--utility__center'>${item.price}</button>
+                </div>
             </div>
         )
     });
