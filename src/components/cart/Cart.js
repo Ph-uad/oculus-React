@@ -13,8 +13,6 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
 
-
-
 const Cart = () => {
 
     const items = useSelector(item => item.bag.bagItems);
@@ -26,7 +24,7 @@ const Cart = () => {
 
     const mapBagItems = items.map(item => {
         if (!item) {
-            return <p key='0ss'>Nothing here</p>
+            return <h2 key='0ss' className="heading-secondary text-center">Nothing here</h2>
         }
         return (
             <SwiperSlide key={ item.id }>

@@ -243,6 +243,11 @@ header {
   overflow: auto;
 }
 
+.item-container::-webkit-scrollbar{
+  width: 0;
+  display: none;
+}
+
 .btn-utility {
   font-size: 1.8rem;
   border: none;
