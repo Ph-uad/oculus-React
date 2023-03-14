@@ -13,7 +13,7 @@
 
   .category_block {
     display: block;
-    flex: 1 35%;
+    flex: 0 35%;
     padding: 4rem;
     aspect-ratio: 1.176;
     color: var(--color-gray-100);
