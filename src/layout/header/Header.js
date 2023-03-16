@@ -2,7 +2,7 @@ import classes from './header.module.css'
 
 const Header = () => {
     return (
-        <div className={ `hero ${classes.hero}` }>
+        <header className={ `hero ${classes.hero}` }>
             <div className="container flex-center">
                 <header>
                     <h1 className="heading-primary">Oculus</h1>
@@ -11,7 +11,7 @@ const Header = () => {
                     </h4>
                 </header>
             </div>
-        </div>
+        </header>
     )
 }
 

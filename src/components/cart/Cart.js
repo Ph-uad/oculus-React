@@ -78,7 +78,7 @@ const Cart = () => {
                 { mapBagItems && mapBagItems }
             </Swiper>
 
-            <h3 className={ `text--right heading--secondary` }>Bill : ${ total }</h3>
+            <h3 className={ `text-right heading--secondary border-top` }>Bill : ${ total }</h3>
         </section>
     )
 }

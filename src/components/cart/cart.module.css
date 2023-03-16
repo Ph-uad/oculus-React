@@ -1,8 +1,8 @@
 .tile {
     /* flex: 1 40%; */
-    aspect-ratio: 1;
+    /* aspect-ratio: 1;
     object-fit: cover;
-    padding: 3rem;
+    padding: 3rem; */
     margin-bottom: 4rem;
 }
 

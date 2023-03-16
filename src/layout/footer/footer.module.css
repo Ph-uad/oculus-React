@@ -1,3 +1,5 @@
 
 .detail{flex: 1 50%;}
-
+.flex{
+    flex-wrap: wrap;
+}

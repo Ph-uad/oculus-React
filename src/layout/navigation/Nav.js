@@ -20,18 +20,22 @@ const Nav = () => {
 
                 <Link to="/" className={ `link ${classes.logo}` } aria-describedby='Site Logo'>oculus</Link>
 
-                <ul className="list flex">
+                <input type="checkbox" id='type' className={ classes.type } />
+                <label htmlFor="type" className={classes.label}></label>
+
+                <ul className={ `flex list ${classes.list}` }>
                     <li className="list-item">
-                        <NavLink to='listing/sunglasses' relative='route' className={({ isActive }) => (isActive ? 'active' : '') + ' link'}>sunglasses</NavLink>
+                        <NavLink to='listing/sunglasses' relative='route' className={ ({ isActive }) => (isActive ? 'active' : '') + ' link' }>sunglasses</NavLink>
                     </li>
                     <li className="list-item">
-                        <NavLink to='listing/eyeglasses' relative='route' className={({isActive}) =>  (isActive ? 'active' : '') +' link'}>eyeglasses</NavLink>
+                        <NavLink to='listing/eyeglasses' relative='route' className={ ({ isActive }) => (isActive ? 'active' : '') + ' link' }>eyeglasses</NavLink>
                     </li>
                 </ul>
 
+
                 <div className={ `flex ${classes.bag}` } onClick={ showBagHandler }>
                     <SVG Id='#icon-shopping_bag' />
-                    { inCart && <span className={ `${classes.notification}` }>{inCart}</span> }
+                    { inCart && <span className={ `${classes.notification}` }>{ inCart }</span> }
                 </div>
 
             </div>

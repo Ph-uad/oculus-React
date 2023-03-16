@@ -19,7 +19,7 @@ const Listing = ({ items }) => {
                 <div className="">
                         <h3 className="heading-tertiary">{ item.name }</h3>
                         <h6 className="heading-senary">'{ item.type }'</h6>
-                    <button onClick={ () => addToBagHandler(item) } className='btn-utility'>+ ${item.price}</button>
+                    <button onClick={ () => addToBagHandler(item) } className='width-full btn-utility'>+ ${item.price}</button>
                 </div>
             </div>
         )
@@ -27,7 +27,7 @@ const Listing = ({ items }) => {
 
     return (
  
-            <div className="container item-container">
+            <div className="container  item-container">
                 <div className='grid'>
                     { glassesList }
                 </div>

@@ -1,4 +1,3 @@
-
 .sidebar {
     height: 100%;
     width: 100%;
@@ -7,15 +6,20 @@
     transition: .4s ease-in-out;
 }
 
-.cart--list {
+.list {
+    position: relative;
+}
+
+.cart-list {
     padding: 4rem 0;
     height: 90%;
     overflow: auto;
 }
 
-.list--detail{
+.list--detail {
     padding: 0 2rem;
     text-align: right;
+    align-self: center;
 }
 
 .list {
@@ -30,16 +34,32 @@
     overflow: hidden;
 }
 
-.hamburger{
+.hamburger {
     transform: rotate(0deg);
     transition: transform .2s linear;
 }
 
-.hamburger:hover{
+.hamburger:hover {
     transform: rotate(30deg);
 }
 
 
-.text--right{
+.right {
     margin-left: auto;
+}
+
+.button-remove {
+    width: fit-content;
+    position: absolute;
+    display: flex;
+    align-self: center;
+    padding: 1rem;
+    border-radius: 100px;
+    line-height: .5;
+    border: none;
+    background: #F4F3F1;
+    color: red;
+    bottom: -30%;
+    right: -10%;
+    translate: -50% -50%;
 }
