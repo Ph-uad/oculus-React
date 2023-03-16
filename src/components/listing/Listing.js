@@ -12,29 +12,27 @@ const Listing = ({ items }) => {
         return (
             <div className="link item" key={ item.id }>
                 <Link className="link" to={ `/listing/${item.id}` }>
-                    <figure className="figure list__figure">
+                    <figure className="figure item-figure">
                         <img src={ item.image } alt="glasses" className="img" />
                     </figure>
                 </Link>
-                <div className="flex">
-                    <span className="">
+                <div className="">
                         <h3 className="heading-tertiary">{ item.name }</h3>
                         <h6 className="heading-senary">'{ item.type }'</h6>
-                    </span>
-                    <button onClick={ () => addToBagHandler(item) } className='btn-utility'>${item.price}</button>
+                    <button onClick={ () => addToBagHandler(item) } className='btn-utility'>+ ${item.price}</button>
                 </div>
             </div>
         )
     });
 
     return (
-        <section className="section">
+ 
             <div className="container item-container">
                 <div className='grid'>
                     { glassesList }
                 </div>
             </div>
-        </section>
+ 
     )
 }
 

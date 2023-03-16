@@ -6,14 +6,12 @@ import Notification from '../components/notification/Notification'
 
 const Root = () => {
   return (
-    <div>
+    <>
         <Notification/>
         <Nav />
-      <main>
         <Outlet />
-      </main>
       <Footer />
-    </div>
+    </>
   )
 }
 

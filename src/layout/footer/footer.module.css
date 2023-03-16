@@ -1,8 +1,3 @@
-.footer{
-    background: var(--color-primary-transparent);
-}
-
-.flex{flex-wrap: wrap;}
 
 .detail{flex: 1 50%;}
 
