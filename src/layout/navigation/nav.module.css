@@ -3,8 +3,9 @@ nav {
     position: sticky;
     top: 0;
     background-color: var(--color-primary-transparent);
-    backdrop-filter: saturate(30%) blur(4px);
+    backdrop-filter: saturate(70%) blur(4px);
     z-index: 100;
+    color: var(--color-gray-100);
 }
 
 .nav .container {
@@ -49,6 +50,10 @@ ul {
 
 .notification {
     align-self: baseline;
+}
+
+.bag svg{
+    fill: var(--color-gray-100);
 }
 
 .bag:hover {
