@@ -63,7 +63,7 @@ nav {
     flex: 0 20%;
 }
 
-.label:before {
+.label:before, .type:checked~.label:before{
     content: '⌄';
     position: absolute;
     border-radius: 5px;
@@ -87,6 +87,7 @@ nav {
 
 .type:checked~.label:before {
     content: '˄';
+    font-size: 5rem;
 }
 
 .notification {
@@ -99,8 +100,12 @@ nav {
 
 .bag{
     position: absolute;
-    bottom: -3rem;
-    right: 10%;
+    bottom: -7rem;
+    right: 5%;
+    background: var(--color-primary-light);
+    padding: 1rem;
+    border-radius: 5px;
+ 
 }
 
 @media (max-width :64em) {
