@@ -12,7 +12,7 @@ import 'swiper/css/scrollbar';
 const Gallery = () => {
 
     return (
-        <section>
+        <section className='section'>
             <header>
                 <h2 className="heading-secondary">Gallery</h2>
             </header>

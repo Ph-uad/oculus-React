@@ -36,14 +36,8 @@
 
 body {
   font-size: 1.6rem;
-  background: var(--color-primary-light)
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    background: var(--color-primary-dark)
-  }
-}
 
 body::-webkit-scrollbar-thumb {
   width: .1rem;
@@ -114,13 +108,13 @@ header {
 }
 
 .heading-tertiary {
-  font-size: clamp(1.2rem, 1.4rem, 1.6rem);
+  font-size: clamp(1.4rem, 1.6rem, 1.6rem);
   font-weight: 600;
 }
 
 .heading-senary {
   font-weight: lighter;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
 h2,
@@ -247,4 +241,8 @@ h6,.btn,span{
 
 .item-container::-webkit-scrollbar {
   display: none;
+}
+
+.section{
+  margin-top: 7rem;
 }

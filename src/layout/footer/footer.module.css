@@ -1,5 +1,7 @@
 
-.detail{flex: 1 50%;}
-.flex{
-    flex-wrap: wrap;
+.detail{flex: 1 30%;}
+.flex{flex-wrap: wrap;}
+.footer{
+    background: #f1f1f1 ;
+    padding:5rem 0;
 }

@@ -27,11 +27,11 @@ const Listing = ({ items }) => {
 
     return (
  
-            <div className="container  item-container">
+            <section className="container section  item-container">
                 <div className='grid'>
                     { glassesList }
                 </div>
-            </div>
+            </section>
  
     )
 }

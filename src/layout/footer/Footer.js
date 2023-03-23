@@ -3,7 +3,7 @@ import classes from './footer.module.css'
 
 const Footer = () => {
     return (
-        <footer className={ `${classes.footer} border-top` }>
+        <footer className={ `${classes.footer}` }>
             <div className={ `${classes.flex} container flex` }>
                 <div className={ classes.detail }>
                     <h6 className="heading-senary bold">Oculus</h6>
