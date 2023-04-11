@@ -64,11 +64,11 @@ nav {
 }
 
 .label:before, .type:checked~.label:before{
-    content: '⌄';
+    content: url(../../Assets/icons/chevron-down.svg);
     position: absolute;
     border-radius: 5px;
-    font-size: 3rem;
-    top: -10%;
+    top: 50%;
+    left: 50%;
     translate: -50% -50%;
 }
 
@@ -86,8 +86,7 @@ nav {
 }
 
 .type:checked~.label:before {
-    content: '˄';
-    font-size: 5rem;
+    content: url(../../Assets/icons/chevron-up.svg);
 }
 
 .notification {
