@@ -2,18 +2,29 @@ import classes from './itemDetail.module.css';
 import { useDispatch } from "react-redux";
 import { bagActions } from '../../store/bag-slice';
 import { uiActions } from '../../store/ui-slice';
+import { useState } from 'react';
+import Notification from '../../layout/UI/notiification/Notification';
 
 const ItemDetail = ({ item }) => {
+  const [show, doShow] = useState(false)
 
   const dispatch = useDispatch()
 
+
+
   const addToBagHandler = (item) => {
     dispatch(bagActions.addToBag(item))
-    dispatch(uiActions.toggleNotification())
+    dispatch(uiActions.toggleNotification());
+    doShow(true)
+
+    setTimeout(() => {
+      doShow(false)
+    }, 2000)
   }
 
   return (
     <section className={ `${classes.preview}` }>
+      { show && <Notification title="Item added" message="successfully" /> }
       <div className={ `container flex ${classes['preview-flex']}` }>
         <figure className={ `${classes.figure}` }>
           <img src={ item.image } alt="" className="img" />

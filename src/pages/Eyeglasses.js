@@ -2,14 +2,13 @@ import { json, useLoaderData } from "react-router-dom";
 import Listing from "../components/listing/Listing"
 
 const Eyeglasses = () => {
-
     const data = useLoaderData();
-    return (
-        <Listing items={ data } type="eyeglasses" />
-        )
+    return  <Listing items={ data } type="eyeglasses" />
 }
 
 export default Eyeglasses
+
+
 
 
 export async function loader(data) {
@@ -25,7 +24,6 @@ export async function loader(data) {
         )
     } else {
         const resData = await response.json()
-
         return data ? resData.filter(items => items.type === data) : resData
     }
 }

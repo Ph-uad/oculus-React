@@ -1,12 +1,12 @@
 import { useDispatch, useSelector } from 'react-redux'
-import classes from './notification.module.css'
+import classes from './CartBar.module.css'
 import { Link } from 'react-router-dom';
 import { uiActions } from '../../store/ui-slice';
 import Modal from '../../layout/UI/overlayModal/Modal';
 import { bagActions } from '../../store/bag-slice';
 
 
-const Notification = () => {
+const CartBar = () => {
 
   const visible = useSelector(show => show.ui);
   const items = useSelector(item => item.bag.bagItems);
@@ -43,4 +43,4 @@ const Notification = () => {
     </Modal>
   )
 }
-export default Notification
+export default CartBar;

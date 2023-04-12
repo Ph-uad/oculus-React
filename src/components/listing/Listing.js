@@ -1,11 +1,21 @@
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { bagActions } from "../../store/bag-slice";
+import { useState } from "react";
+import Notification from "../../layout/UI/notiification/Notification";
 
-const Listing = ({ items }) => {
+const Listing = ({ items, type }) => {
+
+    const [show, doShow] = useState(false);
+
     const dispatch = useDispatch();
     const addToBagHandler = (item) => {
         dispatch(bagActions.addToBag(item))
+        doShow(true)
+
+        setTimeout(()=>{
+            doShow(false)
+        }, 2000)
     }
 
     const glassesList = items.map(item => {
@@ -17,22 +27,24 @@ const Listing = ({ items }) => {
                     </figure>
                 </Link>
                 <div className="">
-                        <h3 className="heading-tertiary">{ item.name }</h3>
-                        <h6 className="heading-senary">'{ item.type }'</h6>
-                    <button onClick={ () => addToBagHandler(item) } className='width-full btn-utility'>+ ${item.price}</button>
+                    <h3 className="heading-tertiary">{ item.name }</h3>
+                    <h6 className="heading-senary">'{ item.type }'</h6>
+                    <button onClick={ () => addToBagHandler(item) } className='width-full btn-utility'>+ ${ item.price }</button>
                 </div>
             </div>
         )
     });
 
     return (
- 
-            <section className="container section  item-container">
-                <div className='grid'>
-                    { glassesList }
-                </div>
-            </section>
- 
+
+        <section className="container section  item-container">
+            { show && <Notification title="Item added" message="successfully" /> }
+            <h2 className="heading--secondaty">{ type }</h2>
+            <div className='grid'>
+                { glassesList }
+            </div>
+        </section>
+
     )
 }
 

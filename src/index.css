@@ -79,13 +79,8 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
 }
 
-.list-item .link:hover {
+.list-item .link:hover, .active {
   text-decoration: underline;
-}
-
-.active {
-  background: var(--color-gray-100);
-  color: var(--color-gray-900);
 }
 
 .text-center,
@@ -245,4 +240,18 @@ h6,.btn,span{
 
 .section{
   margin-top: 7rem;
+}
+
+.notification{
+  justify-content:flex-start;
+  position: fixed;
+  top: 6%;
+  left: 0;
+  width: 100vw;
+  padding: 1rem 10%;
+  border: 1px solid green;
+  gap: 1rem;
+  align-items: center;
+  background-color: rgba(95, 231, 95, 0.396);
+  z-index: 100;
 }
