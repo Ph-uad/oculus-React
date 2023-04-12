@@ -49,7 +49,7 @@ const bagSlice = createSlice({
     removeFromBag: (state, action) => {
       const newItem = action.payload;
       const findIndex = state.bagItems.findIndex(x => x.id === newItem.id);
-      state.totalAmount -= newItem.price
+      state.totalAmount -= newItem.price * newItem.amount
       delete state.bagItems[findIndex];
       state.bagItems = state.bagItems.filter(x => x )
     },
